@@ -1,112 +1,136 @@
+![](RackMultipart20220916-1-5fxeu4_html_ebf7ccf2b27f9ac1.png)
 
+**Fiche descriptive du software**
 
+# **PAGES**
 
-Fiche descriptive du software
-PAGES
-Login from
-oID
-oMDP
-	-Dashboard Admin.
--Dashboard Hôpital.
--Dashboard Patient.
--Dashboard personnel (privé et public)
--Dashboard société
+| Loginfrom
 
-DATABASE 
+  - ID
+  - MDP
 
-Patient
--Nom et prénom,
--CIN,
--Sexe,
--Date de naissance,
--Age (sera calculé automatiquement)
--poids
--ID
--Adresse
--Contacte
-l’hôpital
--Région
--Ville
--Statut 
--Désignation
--Contacte
-Personnel
--Nom et prénom,
--CIN,
--Sexe,
--Date de naissance,
--Age ( sera calculé automatiquement)
--poids
--ID
--Adresse
--Contacte
--Secteur d’activité
--La fonction 
-Société
--Région
--Ville
--Désignation
--Contacte
- 
+#
 
+ |
+- Dashboard Admin.
+- DashboardHôpital.
+- DashboardPatient.
+- Dashboard personnel (privé et public)
+- Dashboard société
+ |
+| --- | --- |
 
+#
 
+# **DATABASE**
 
+#
 
+| **Patient** |
+| --- |
+|
+- Nometprénom,
+- CIN,
+- Sexe,
+- Datedenaissance,
+- Age(seracalculéautomatiquement)
+- poids
+- ID
+- Adresse
+- Contacte
+ |
 
+| **l'hôpital** |
+| --- |
+|
+- Région
+- Ville
+- Statut
+- Désignation
+- Contacte
+ |
 
-Service	Dose
--Service
--Equipement
--Examen
--Protocole d’examen	-Dose instantané,
--Dose mensuel
--Dose annuel
--Dose cumulées
+| **Personnel** |
+| --- |
+|
+- Nometprénom,
+- CIN,
+- Sexe,
+- Datedenaissance,
+- Age( seracalculéautomatiquement)
+- poids
+- ID
+- Adresse
+- Contacte
+- Secteur d'activité
+- La fonction
+ |
 
+| **Société** |
+| --- |
+|
+- Région
+- Ville
+- Désignation
+- Contacte
+ |
 
+| **Service** | **Dose** |
+| --- | --- |
+|
+- Service
+- Equipement
+- Examen
+- Protocoled'examen
+ |
+- Doseinstantané,
+- Dosemensuel
+- Dose annuel
+- Dosecumulées
+ |
 
+# **PROFILES / DASHBOARDS**
 
+**ADMIN**
 
+  - Informationssurles patients, hôpitaux, services.
+  - Informationssurles doses.
+  - Statistiques et rapports :
+    - Journalière,mensuel,annuel,cumulée.
+    - Parhôpital,parrégion,serviceetappareil.
+  - Actions.
+    - Rechercheparprotocole, patient,équipement,période ...
+    - Créationdefiltres derecherche parsexe,Age,poids, service, hôpital,région.
+    - Supprimedes patients, Hôpital.
+    - Ajouterdespatients, personnel et Hôpitaux.
 
-PROFILES / DASHBOARDS
-ADMIN
-oInformations sur les patients, hôpitaux, services.
-oInformations sur les doses.
-oStatistiques et rapports :
-Journalière, mensuel, annuel, cumulée.
-Par hôpital, par région, service et appareil.
-oActions.
-Recherche par protocole, patient, équipement, période ...
-Création de filtres de recherche par sexe, Age, poids, service, hôpital, région.
-Supprime des patients, Hôpital.
-Ajouter des patients, personnel et Hôpitaux.
-HÔPITAL
-oInformations sur les patients, les services et les doses sur même hôpital.
-oStatistiques et rapports sur même hôpital.
-Journalière, mensuel, annuel, cumule.
-service et appareil.
-oActions.
-Recherche par protocole, patient, équipement, période ...
-Création de filtres de recherche par sexe, Age, poids et service.
-Ajouter des patients.
-Ajouter des personnels
-SOCIETE
-oInformations sur le personnel et les doses de la société.
-oStatistiques et rapports de personnel :
-Journalière, mensuel, annuel, cumule.
-service et appareil.
-oActions.
-Recherche par protocole, patient, équipement, période ...
-Création de filtres de recherche par sexe, Age, poids, service.
-Ajouter des personnels
+**HÔPITAL**
 
-PATIENT ET LE PERSONNEL
-oInformations personnel.
-oInformations sur la dose.
-oStatistiques pour lui-même.
-Journalière, mensuel, annuel, cumule.
-Par hôpital, par région, service et appareil.
+  - Informationssurlespatients, les services et les doses surmêmehôpital.
+  - Statistiques et rapports surmêmehôpital.
+    - Journalière,mensuel,annuel,cumule.
+    - serviceetappareil.
+  - Actions.
+    - Rechercheparprotocole, patient,équipement,période ...
+    - Créationdefiltres derecherche parsexe,Age,poids et service.
+    - Ajouterdespatients.
+    - Ajouter des personnels
 
+**SOCIETE**
 
+  - Informationssurle personnel et les doses de la société.
+  - Statistiques et rapports de personnel :
+    - Journalière,mensuel,annuel,cumule.
+    - serviceetappareil.
+  - Actions.
+    - Rechercheparprotocole, patient,équipement,période ...
+    - Créationdefiltres derecherche parsexe,Age,poids,service.
+    - Ajouter des personnels
 
+**PATIENT ET LE PERSONNEL**
+
+  - Informationspersonnel.
+  - Informationssurla dose.
+  - Statistiques pourlui-même.
+    - Journalière,mensuel,annuel,cumule.
+    - Parhôpital,parrégion,serviceetappareil.
