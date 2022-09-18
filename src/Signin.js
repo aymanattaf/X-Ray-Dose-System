@@ -18,8 +18,8 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" href="#">
+        X-Ray Dose System
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -30,10 +30,13 @@ function Copyright(props) {
 const theme = createTheme({
     palette:{
         primary:{
-            main: colors.orange[500],
+            main: '#f17721',
         },
         secondary:{
-            main: colors.orange[500],
+            light: '#fff',
+            main: '#f17721',
+            dark: '#ba000d',
+            contrastText: '#000',
         },
     },
 });
@@ -50,21 +53,21 @@ export default function SignIn() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container sx={{ borderRadius: '10px', bgcolor: 'secondary.light' }} component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 15,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+          <Avatar  sx={{ m: 1,marginTop: 5, bgcolor: 'secondary.main' }}>
             {/* <Lock /> */}
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Connexion
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -87,29 +90,29 @@ export default function SignIn() {
               id="password"
               autoComplete="current-password"
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
-            />
+            /> */}
             <Button
               type="submit"
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign In
+              Login
             </Button>
             <Grid container>
-              <Grid item xs>
+              {/* <Grid item xs>
                 <Link href="#" variant="body2">
                   Forgot password?
                 </Link>
-              </Grid>
-              <Grid item>
+              </Grid> */}
+              {/* <Grid item>
                 <Link href="#" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Box>
         </Box>
