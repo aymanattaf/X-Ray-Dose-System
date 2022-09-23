@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import SignIn from './Signin.js'
-// import Dashboard from './Dashboard/Dashboard.js';
+// import SignIn from './Signin.js'
+import Login from './API/login'
 function App() {
   return (
-    <div className="App">
-     <SignIn></SignIn>
-      {/* <Dashboard></Dashboard> */}
-    </div>
+    <main className="App">
+     {/* <SignIn></SignIn> */}
+     <Login>
+      
+     </Login>
+     </main>
   );
 }
 
