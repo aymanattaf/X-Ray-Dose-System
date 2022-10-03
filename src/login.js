@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { useRef, useState, useEffect, useDebugValue} from 'react';
+import { useRef, useState, useEffect, useDebugValue, useContext} from 'react';
+import AuthContext from './context/AuthProvider';
+// import axios from './API/axios';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -15,7 +17,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { colors, dividerClasses } from '@mui/material';
 
-
+// copyrights
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -28,7 +30,7 @@ function Copyright(props) {
     </Typography>
   );
 }
-
+// theme parameters
 const theme = createTheme({
     palette:{
         primary:{
@@ -36,14 +38,15 @@ const theme = createTheme({
         },
         secondary:{
             light: '#fff',
-            main: '#f17721',
+            main: '#18a6df',
             dark: '#ba000d',
             contrastText: '#000',
         },
     },
 });
-
-const LoginTest = () => {
+// const LOGIG_URL = '/auth';
+const Login = () => {
+    // const {setAuth} = useContext {AuthContext};
     const userRef = useRef();
     const errRef = useRef();
 
@@ -63,7 +66,7 @@ const LoginTest = () => {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        console.log(user, psw);
+        // console.log(user, psw);
         setUser('');
         setPsw('');
         setSuccess(true);
@@ -159,4 +162,6 @@ const LoginTest = () => {
     )
 }
 
-export default LoginTest
+export default Login
+
+
